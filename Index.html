@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="h-100 bg-danger">
+    <div class="h-100 container d-flex justify-content-center align-items-center">
+      <div class="card text-center border border-dark border-4 rounded-4" style="height: 85%">
+        <div class="card-header border-dark">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item fw-bold">
+              <a class="nav-link active text-dark" aria-current="true" href="#">Pomodoro</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link text-dark" href="#">Histórico</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body text-danger">
+          <div class="me-4 ms-4 mt-3 mb-5 d-flex align-items-center justify-content-center flex-column">
+            <div class="p-0 circular-progress">
+              <img src="https://c.tenor.com/RnRFadtmK1AAAAAC/tomato-spin.gif" class="position-absolute" height="130rem">
+            </div>
+             <div class="p-3 m-1 value-container">00:00:00</div>
+          </div>
+          <a href="#" class="btn btn-danger border border-dark border-2 pe-3 ps-3 fw-bold" id="startButton">Start</a>
+          <a href="#" class="btn btn-danger border border-dark border-2 pe-3 ps-3 fw-bold" id="pauseButton">Pause</a>
+          <a href="#" class="btn btn-danger border border-dark border-2 pe-3 ps-3 fw-bold" id="resetButton">Save</a>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
